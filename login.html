@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure.css" crossorigin="anonymous">
+    <title>登陆</title>
+    <style>
+        .head{
+            width: 400px;
+            margin: 50px auto;
+            /* text-align: center; */
+            /* font-size: 25px; */
+        }
+        /* body{
+            background-color: bisque;
+        } */
+    </style>
+</head>
+<body>
+    <div class="head">
+        <!-- <fieldset>
+            <legend>登陆</legend>
+            <form action="user/login.php" method="POST">
+                <input type="text" placeholder="请输入用户名" name="username"><br/>
+                <input type="password" placeholder="请输入密码" name="pwd"><br/>
+                <input type="submit" value="登陆">
+                <input type="button" value="注册" onclick="register()">
+                <br/>
+            </form>
+        </fieldset> -->
+        <form class="pure-form pure-form-stacked" action="user/login.php" method="POST">
+            <fieldset>
+                <label for="name">Username</label>
+                <input id="name" type="text" name="username" placeholder="Username">
+        
+                <label for="password">Password</label>
+                <input id="password" type="password" name="pwd" placeholder="Password">        
+        
+                <label for="remember" class="pure-checkbox">
+                    <input id="remember" type="checkbox"> Remember me
+                </label>
+        
+                <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+                <button type="button" class="pure-button pure-button-primary" onclick="register()">Register</button>
+            </fieldset>
+        </form>
+    </div>
+    <script>
+            function register(){
+                window.location.href="register.html";
+            }
+        </script>
+</body>
+</html>

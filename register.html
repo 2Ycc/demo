@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <style>
+        .head{
+            width: 400px;
+            margin: 50px auto;
+            text-align: center;
+            font-size: 25px;
+        }
+        body{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <fieldset>
+            <legend>注册</legend>
+            <form action="user/register.php" method="POST">
+                <input type="text" placeholder="请输入用户名" name="username"><br/>
+                <input type="password" placeholder="请输入密码" name="pwd"><br/>
+                <input type="password" placeholder="请确认密码" name="pwd2"><br/>
+                <input type="submit" value="注册">
+                <input type="button" value="登陆" onclick="login()">
+                <br/>
+            </form>
+        </fieldset>
+    </div>
+    <script>
+        function login(){
+            window.location.href="login.html";
+        }
+    </script>
+
+</body>
+</html>

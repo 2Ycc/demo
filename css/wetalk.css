@@ -1,0 +1,67 @@
+ body{
+    background-image: url(../img/background.png);
+    background-color: rgb(210,233,251);
+    background-repeat:no-repeat;
+ }
+ .head{
+    margin: 0px 0px 10px 0px;
+    /* background-color: rgb(217,237,247); */
+    height: 30px;
+    text-align: right;
+ }
+ .head a{
+    text-decoration: none;
+    color: black;
+ }
+ .head a:hover{
+    color: #00a1d6;
+ }
+#h2{
+    color: rgb(244,90,141);
+    text-align: center;
+    /* color: pink; */
+ }
+ .container{
+    width: 600px;
+    margin: 0px auto;
+    height: 900px;
+}
+.add{ overflow: hidden; }
+.add .content{
+    width: 582px;
+    margin: 0px;
+    padding: 8px;
+    border-radius:8px;
+    font-size: 14px;
+} 
+.add .content :hover{
+    color: #00a1d6;
+}
+.add .btn{ float: right; }
+
+.msg{
+    margin: 20px 0px;
+    background-color: white;
+    padding: 9px;
+    border: 2px;
+    border-radius:7px;
+}
+.msg .info{ overflow: hidden; }
+.msg .user{ float: left;color:#00a1d6}
+.msg .time{ float: right;color: #999}
+.msg .content{ 
+    width: 100%;
+    word-break:break-word;
+}
+.msg .content a{
+    float: right;
+    text-decoration: none;
+    /* color: black; */
+    color: #00a1d6;
+}
+.msg .content a:hover{
+    color:gray;
+}
+
+
+
