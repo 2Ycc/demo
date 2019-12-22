@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.head {
+    width: 600px;
+    margin: 250px auto;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+.head legend{
+    text-align: center; 
+    font-size: 28px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 20px;
+}
+body{
+    background-image: url(../img/backg.jpg);
+    background-repeat: no-repeat;
+}
+
+.spanTips{
+    font-size: small;
+}
+
+.marg{
+    margin-left: 20px;
+}

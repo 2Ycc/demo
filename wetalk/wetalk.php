@@ -31,6 +31,8 @@ if( $mysqli_result ===false ){
 <title>gbook</title>
 <link rel="stylesheet" href="../css/wetalk.css">
 <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure.css" crossorigin="anonymous">
+
+
 </head>
 
 <body>

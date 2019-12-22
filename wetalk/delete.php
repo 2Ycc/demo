@@ -13,15 +13,19 @@ $row[] = $mysqli_result->fetch_array( MYSQLI_ASSOC );
 
 // var_dump($row['0']['user']);
 // var_dump($username);
-if($row['0']['user']!=$username){
-    echo "<script>alert('此留言不是您所发，无法删除！');location.href='wetalk.php';</script>";
-    exit();
-}else{
-    $sql="DELETE FROM msg where id={$id};";
-    $db->query($sql);
-    echo "<script>alert('删除成功！');location.href='wetalk.php';</script>";
-    exit();
-}
+// echo("<script> var check = confirm('是否要删除此留言');</script>");
+// if(check_c){
+    // var_dump(check_c);
+    if($row['0']['user']!=$username){
+        echo "<script>alert('此留言不是您所发，无法删除！');location.href='wetalk.php';</script>";
+        exit();
+    }else{
+        $sql="DELETE FROM msg where id={$id};";
+        $db->query($sql);
+        echo "<script>alert('删除成功！');location.href='wetalk.php';</script>";
+        exit();
+    }
+// }
 
 
 ?> 

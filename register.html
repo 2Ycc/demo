@@ -2,38 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/login-register.css">
+    <link rel="stylesheet" href="css/pure.css">
+    <script src="js/check.js"></script>
     <title>注册</title>
-    <style>
-        .head{
-            width: 400px;
-            margin: 50px auto;
-            text-align: center;
-            font-size: 25px;
-        }
-        body{
-            background-color: bisque;
-        }
-    </style>
 </head>
 <body>
+    <!-- 主体显示 -->
     <div class="head">
-        <fieldset>
-            <legend>注册</legend>
-            <form action="user/register.php" method="POST">
-                <input type="text" placeholder="请输入用户名" name="username"><br/>
-                <input type="password" placeholder="请输入密码" name="pwd"><br/>
-                <input type="password" placeholder="请确认密码" name="pwd2"><br/>
-                <input type="submit" value="注册">
-                <input type="button" value="登陆" onclick="login()">
-                <br/>
-            </form>
-        </fieldset>
+        <legend>注册</legend>
+        <br>
+        <!-- 表单 -->
+        <form action="user/register.php" method="POST" class="pure-form pure-form-aligned">
+            <div class="pure-control-group">
+                <label for="name"><strong>Username</strong></label>
+                <input id="mingzi" name="username" type="text" placeholder="Username" maxlength="12">&nbsp;&nbsp;<small>数字或字母开头总长6-12位</small> 
+            </div>
+            <div class="pure-control-group">
+                <label for="name"><strong>Telephone</strong></label>
+                <input id="tel" type="text" placeholder="Telephone" maxlength="11">&nbsp;&nbsp;<small>11位数字</small> 
+            </div>
+            <div class="pure-control-group">
+                <label for="password"><strong>Password</strong></label>
+                <input id="mima" name="pwd" type="password" placeholder="Password" maxlength="12" >&nbsp;&nbsp;<small>1到12位</small>
+            </div>
+            <div class="pure-control-group">
+                <label for="password"><strong>Password</strong></label>
+                <input id="queren" name="pwd2" type="password" placeholder="Re-password" maxlength="16" >&nbsp;&nbsp;<small>确认密码</small>
+            </div>
+            <div class="pure-controls">
+                <label for="cb" class="pure-checkbox">
+                    <input id="cb" type="checkbox" onclick="checkBox()"> I've read the terms and conditions
+                </label>
+                <input id="btn-detail" type="submit" class="pure-button pure-button-primary" disabled onclick="checkRegister()" value="Register"/>
+                <button type="button" class="pure-button pure-button-primary marg" onclick="login()">Login</button>
+            </div>
+        <br>
+        </form>
     </div>
-    <script>
-        function login(){
-            window.location.href="login.html";
-        }
-    </script>
-
 </body>
 </html>
